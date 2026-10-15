@@ -39,7 +39,15 @@ body{font-size:16px;line-height:1.75}
 .about-photo{background:#e7eae0;isolation:isolate}
 .about-photo:before{display:none}
 .about-photo:after{width:calc(100% - 28px);height:calc(100% - 28px);border-radius:4px;border-color:#f7f5ef;z-index:1;pointer-events:none}
-.about-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 34%;}
+.about-photo img {
+  position: absolute;
+  inset: 30px;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  object-fit: cover;
+  object-position: center 34%;
+  border-radius: 5px;
+}
 .about-photo .about-stamp{z-index:2;background:rgba(247,245,239,.92);padding:10px 12px;border-radius:4px;color:#344b3b}
 .about-photo .about-caption{z-index:2;background:rgba(247,245,239,.94);padding:10px 13px;border-radius:4px;color:#344b3b}
 @media(max-width:680px){body{font-size:16px}.hero-text{font-size:16px}.hero-footnote{font-size:11px}.section-intro{font-size:15px}.service-card p,.work-card>p,.about-copy>p:not(.eyebrow),.timeline-body p{font-size:14px}.service-card li{font-size:13px}.timeline-body h3{font-size:16px}.timeline-body h3 span{font-size:13px}.contact-text{font-size:15px}.about-visual{min-height:340px}}
